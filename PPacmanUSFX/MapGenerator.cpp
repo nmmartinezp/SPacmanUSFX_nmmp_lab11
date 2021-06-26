@@ -52,7 +52,8 @@ bool MapGenerator::load(string path)
 				((GameActor*)objetoNuevo)->setFramesDireccion(4);
 				break;
 			case 'p':
-				objetoNuevo = new Pacman(tileNuevo, textureManager->getTextura("pacman_clasico"));
+				//objetoNuevo = new Pacman(tileNuevo, textureManager->getTextura("pacman_clasico"));
+				objetoNuevo = factory->createPacmanInstance(tileNuevo, textureManager);
 				((GameActor*)objetoNuevo)->setFramesAnimacion(textureManager->getFramesAnimacion("pacman_clasico"));
 				((GameActor*)objetoNuevo)->setFramesDireccion(2);
 
@@ -64,7 +65,8 @@ bool MapGenerator::load(string path)
 				/*objetoNuevo = factory->createFantasmaInstance(tileNuevo, textureManager, x * 25, y * 25, 1);
 				objetoNuevo->setParametrosAnimacion(4);
 				break;*/
-				objetoNuevo = new Fantasma(tileNuevo, textureManager->getTextura("fantasma_clasico1"));
+				//objetoNuevo = new Fantasma(tileNuevo, textureManager->getTextura("fantasma_clasico1"));
+				objetoNuevo = factory->createFantasmaInstance(tileNuevo, textureManager);
 				((GameActor*)objetoNuevo)->setFramesAnimacion(textureManager->getFramesAnimacion("fantasma_clasico"));
 				((GameActor*)objetoNuevo)->setFramesDireccion(2);
 				((GameActor*)objetoNuevo)->setVelocidad(3);

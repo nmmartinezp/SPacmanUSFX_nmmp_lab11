@@ -22,7 +22,7 @@ private:
 	const string pathParedClasicoAdapter = "Resources/wall_sprite.bmp";
 
 	const string pathPacmanGalactico = "Resources/PacMan.bmp";
-	const string pathFantasmaGalactico1 = "Resources/fantasmaamarillo.bmp ";
+	const string pathFantasmaGalactico1 = "Resources/fantasmaamarillo.bmp";
 	const string pathFantasmaGalactico2 = "Resources/azul.png ";
 	const string pathFantasmaGalactico3 = "Resources/fantasma.png ";
 	const string pathFantasmaGalactico4 = "Resources/fantasmarojo.bmp ";

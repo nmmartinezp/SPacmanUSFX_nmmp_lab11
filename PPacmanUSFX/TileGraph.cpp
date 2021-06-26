@@ -7,7 +7,6 @@ int TileGraph::altoPantalla = 0;
 
 TileGraph::TileGraph()
 {
-	//tiles = nullptr;
 
 	anchoTileGraph = 0;
 	altoTileGraph = 0;
